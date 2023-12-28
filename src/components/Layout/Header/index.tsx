@@ -3,6 +3,9 @@ import { HTMLAttributes } from "react";
 import { Menu } from "react-feather";
 
 export interface HeaderProps extends HTMLAttributes<HTMLDivElement> {
+  /**
+   * Text to appears in Header
+   */
   title?: string;
 }
 
