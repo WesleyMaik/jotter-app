@@ -1,6 +1,8 @@
+"use client";
+
+import Dropdown from "@/components/Menu/Dropdown";
 import clsx from "clsx";
 import { HTMLAttributes } from "react";
-import { Menu } from "react-feather";
 
 export interface HeaderProps extends HTMLAttributes<HTMLDivElement> {
   /**
@@ -21,13 +23,13 @@ function Header({ title = "", ...props }: HeaderProps) {
       <div>
         <p>{title}</p>
       </div>
-      <button
-        title="Menu"
-        type="button"
-        className="border-none outline-none bg-transparent"
-      >
-        <Menu />
-      </button>
+      <Dropdown
+        items={[
+          {
+            label: "Item 1",
+          },
+        ]}
+      />
     </header>
   );
 }
