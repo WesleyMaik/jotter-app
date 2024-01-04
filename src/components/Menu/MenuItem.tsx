@@ -4,7 +4,7 @@ type MenuItemProps = Item;
 
 function MenuItem({ label, action }: MenuItemProps) {
   const className =
-    "w-full text-nowrap hover:bg-zinc-300 dark:hover:bg-zinc-800 px-2 rounded-sm cursor-pointer select-none active:scale-[0.95] transition-[scale]";
+    "w-full text-nowrap hover:bg-zinc-200 dark:hover:bg-zinc-700 px-2 rounded-sm cursor-pointer select-none active:scale-[0.95] transition-[scale]";
 
   const props = {
     className,

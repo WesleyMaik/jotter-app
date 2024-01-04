@@ -16,7 +16,7 @@ function Header({ title = "", ...props }: HeaderProps) {
     <header
       {...props}
       className={clsx(
-        "w-full h-10 bg-zinc-100 dark:bg-zinc-800 flex items-center justify-between gap-4 px-4",
+        "w-full h-10 flex items-center justify-between gap-4 px-4",
         props.className
       )}
     >
